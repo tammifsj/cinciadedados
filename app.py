@@ -3,12 +3,12 @@ import streamlit as st
 import plotly.express as px
 
 # Configuração da página
-st.set_page_config(page_title="Coffee Shop Dashboard Avançado", layout="wide")
-st.title("☕ Coffee Shop Sales Dashboard - Análise Avançada")
+st.set_page_config(page_title="Dashboard de vendas cafeteria", layout="wide")
+st.title("☕ Dashboard cafeteria - Análise Avançada")
 st.markdown("""
 Este dashboard explora detalhadamente os dados de vendas de uma rede de cafeterias.  
 **Fonte:** Dataset de transações fictícias  
-**Objetivo:** Avaliar desempenho por localidade, categoria, tipo de produto e comportamento temporal.
+**Objetivo:** Avaliação do desempenho por localidade, categoria, tipo de produto e comportamento temporal.
 """)
 
 # Carregar dados
@@ -48,7 +48,7 @@ df_filtrado = df[
 tab1, tab2, tab3, tab4 = st.tabs(["📊 Visão Geral", "📈 Evolução Mensal", "🕓 Horários de Pico", "🔎 Produtos em Destaque"])
 
 # --------------------------
-# Aba 1 - Visão Geral
+# seção 1 - Visão Geral
 # --------------------------
 with tab1:
     st.subheader("Total de Vendas por Localidade e Categoria")
@@ -57,7 +57,7 @@ with tab1:
     st.plotly_chart(fig, use_container_width=True)
 
 # --------------------------
-# Aba 2 - Evolução Mensal
+# seção 2 - Evolução Mensal
 # --------------------------
 with tab2:
     st.subheader("Vendas Mensais por Categoria")
@@ -66,7 +66,7 @@ with tab2:
     st.plotly_chart(fig, use_container_width=True)
 
 # --------------------------
-# Aba 3 - Horários de Pico
+# seção 3 - Horários de Pico
 # --------------------------
 with tab3:
     st.subheader("Distribuição de Transações por Hora")
@@ -75,7 +75,7 @@ with tab3:
     st.plotly_chart(fig, use_container_width=True)
 
 # --------------------------
-# Aba 4 - Produtos em Destaque
+# seção 4 - Produtos em Destaque
 # --------------------------
 with tab4:
     st.subheader("Produtos com Maior Faturamento")
