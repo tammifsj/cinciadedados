@@ -46,4 +46,4 @@ with tab3:
                        values="total_price", title="Hierarquia de Produtos")
     st.plotly_chart(fig3, use_container_width=True)
 
-st.markdown("Aplicativo desenvolvido para substituição da G2.")
+st.markdown("Aplicativo desenvolvido para analizar vendas de uma cafeteria.")
