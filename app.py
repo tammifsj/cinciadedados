@@ -11,7 +11,7 @@ Este dashboard analisa as vendas de uma cafeteria com base nas transações regi
 **Objetivo:** Explorar padrões de vendas por tipo de produto, localidade e datas.
 """)
 
-# Carregar dados
+#dados
 @st.cache_data
 def load_data():
     df = pd.read_csv("coffee_shop_clean.csv", parse_dates=["transaction_date", "transaction_datetime"])
